@@ -14,6 +14,6 @@ FROM health_data_2023
 WHERE "Question" LIKE 'Cancer of the lung%';
 
 /* Identify all stratification categories used by lung cancer data */
-SELECT DISTINCT("DataValueType")
+SELECT DISTINCT("StratificationCategory1", "Stratification1")
 FROM health_data_2023
 WHERE "Question" LIKE 'Cancer of the lung%';
