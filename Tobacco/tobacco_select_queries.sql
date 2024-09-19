@@ -26,4 +26,7 @@ WHERE "Question" LIKE 'Current smoking among adults aged >= 18 years';
 /* Select all data related to a single question */
 SELECT *
 FROM health_data_2023
-WHERE "Question" LIKE 'Current smoking among adults aged >= 18 years';
+WHERE "Question" = 'Current smokeless tobacco use among adults aged >= 18 years'
+AND "YearStart" = '2011'
+AND "LocationAbbr" = 'MI'
+AND "DataValueType" = 'Age-adjusted Prevalence';
