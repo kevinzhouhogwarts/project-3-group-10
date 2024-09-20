@@ -114,7 +114,9 @@ Future Work:
 ## Visualization by Leaflet
 Three Leaflet visualizations were constructed:
 * National level with cancer rates of 50 states visualized
-* 
+* National level with lung cancer and smoking rates visualized
+* State level (Florida) with lung cancer and smoking rates visualized
+In order to display disease indicators and other variables on the national and state maps, those values had to be inserted into the properties of the GeoJSON files, using pandas. Preparation of the GeoJSON files and the ultimate graphing using Leaflet were performed within the `Leaflet_x` folders.
 
 # Conclusion
 The Chronic Disease Indicators allow for comparative analysis of a variety of disease measurements between states. However, due to the myriad factors impacting health and disease incidence, to even begin to draw correlations and conclusions regarding the causes or associations of disease, even more external data is needed.
