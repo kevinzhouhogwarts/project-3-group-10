@@ -116,7 +116,7 @@ d3.json("../data/state_updated.json").then(function(data) {
     // Bind popup to show on mouseover
     onEachFeature: function(feature, layer) {
       // Create the popup content
-      let popupContent = `<strong>${feature.properties.NAME}</strong><br>$ ${feature.properties["Lung Cancer, Average Annual Incidence, 2011-2015"]} per 100,000`;
+      let popupContent = `<strong>${feature.properties.NAME}</strong><br>${feature.properties["Lung Cancer, Average Annual Incidence, 2011-2015"]} per 100,000`;
 
       // Bind the popup to the layer
       layer.bindPopup(popupContent);
